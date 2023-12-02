@@ -1,0 +1,10 @@
+{
+  "extends": ["@relivecc/skyhawk-util-core/tslint"],
+  "rules": {
+    "array-type": [true, "array-simple"],
+    "no-console": false
+  },
+  "linterOptions": {
+    "exclude": ["**/*.steps.ts"]
+  }
+}
