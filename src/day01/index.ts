@@ -1,3 +1,4 @@
+import { isDigit } from "../util/helperFunctions.ts";
 import { readFile } from "../util/readFile.ts";
 
 const getInputData = () => {
@@ -15,10 +16,6 @@ const digitsAsString: { [key: string]: number } = {
   seven: 7,
   eight: 8,
   nine: 9,
-};
-
-const isDigit = (char: string) => {
-  return /^\d+$/.test(char);
 };
 
 const checkIfDigitAsString = (stringToCheck: string) => {
